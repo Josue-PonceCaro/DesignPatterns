@@ -1,4 +1,10 @@
 #1. Single responsability principal
+'''
+Una clase debe tener una, solo una, razon para cambiar <<<<
+Es decir, se debe implementar solo funciones subatomicas, es decir, 
+no se pueden dividir en mas subpartes
+
+'''
 class Journal:
     def __init__(self):
         self.entries = []

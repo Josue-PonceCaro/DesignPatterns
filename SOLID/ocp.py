@@ -1,4 +1,10 @@
 #2. Open close principal
+'''
+Debe estar abierto a extensiones, pero cerrado para modificaciones.
+
+Se puede anhadir nueva funcionalidad, pero no se puede modificar funciones o 
+clases ya existentes,
+'''
 from abc import abstractmethod, ABC
 from enum import Enum
 class Color(Enum):
