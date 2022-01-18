@@ -1,4 +1,8 @@
 #5. Dependency Inversion Principal
+'''
+High level modules should not deppend on low level module
+They should depend on abstractions
+'''
 from abc import abstractmethod
 from enum import Enum
 

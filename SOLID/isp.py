@@ -52,7 +52,9 @@ class Scanner:
 class MyPrinter(Printer):
     def print(self, document):
         print(document)
-
+class MyScanner(Scanner):
+    def scan(self, document):
+        print('Will scann', str(document))
 
 class Photocopier(Printer, Scanner):
     def print(self, document):
@@ -84,6 +86,13 @@ class MultiFunctionMachine(MultiFunctionDevice):
         self.scanner.scan(document)
 
 
-printer = OldFashionedPrinter()
-printer.fax(123)  # nothing happens
-printer.scan(123)  # oops!
+# printer = OldFashionedPrinter()
+# printer.fax(123)  # nothing happens
+# printer.scan(123)  # oops!
+p = MyPrinter()
+s = MyScanner()
+p.print('Hello workd')
+s.scan('s')
+printer = MultiFunctionMachine(p,s)
+printer.print('aa bb cc dd ee ff gg hh ii jj')
+printer.scan('aa bb cc dd ee ff gg hh ii jj')
