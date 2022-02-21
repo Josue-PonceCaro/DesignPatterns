@@ -46,6 +46,10 @@ class Builder(IBuilder):
     def build_part_c(self):
         self.product.parts.append('c')
         return self
+    
+    def build_part_d(self):
+        self.product.parts.append('d')
+        return self
 
     def get_result(self):
         return self.product
@@ -65,7 +69,7 @@ class Director:
         return Builder()\
             .build_part_a()\
             .build_part_b()\
-            .build_part_c()\
+            .build_part_d()\
             .get_result()
 
 # The Client

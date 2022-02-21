@@ -81,6 +81,6 @@ if __name__ == '__main__':
         .build()
     print(p)
     print('then///////////////')
-    person2 = PersonBuilder().build()
+    person2 = PersonBuilder().lives.at('ss').build()
     print(person2)
     print(pb)
